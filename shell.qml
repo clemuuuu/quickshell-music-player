@@ -59,7 +59,7 @@ ShellRoot {
         { id: "wallust", name: "Fond d'écran", light: false },
         { id: "rouge", name: "Rouge", light: false, bg: "#1a0b0d", fg: "#f3d6d6", accent: "#e5484d", accent2: "#8c1d24", muted: "#9a6b6e" },
         { id: "bleu", name: "Bleu nuit", light: false, bg: "#0b1020", fg: "#d6e2ff", accent: "#5b8cff", accent2: "#1e3a8a", muted: "#6b7aa6" },
-        { id: "dark", name: "Dark", light: false, bg: "#0a0a0a", fg: "#eaeaea", accent: "#f2f2f2", accent2: "#555555", muted: "#7a7a7a" },
+        { id: "dark", name: "Blanc", light: false, bg: "#0a0a0a", fg: "#eaeaea", accent: "#f2f2f2", accent2: "#555555", muted: "#7a7a7a" },
         { id: "violet", name: "Violet", light: false, bg: "#140d1f", fg: "#eadcff", accent: "#b388ff", accent2: "#6a3fc2", muted: "#8a78a8" },
         { id: "vert", name: "Vert", light: false, bg: "#0b1612", fg: "#d8f3e6", accent: "#3ddc97", accent2: "#0f6b4a", muted: "#6f9b88" },
         // Thème vivant : teintes qui dérivent, anneau arc-en-ciel, aurores en fond qui réagissent aux basses
@@ -563,7 +563,7 @@ ShellRoot {
         history = history.filter(h => h.key !== key);
         saveLibrary();
         const artDir = "file://" + dataDir + "/art/";
-        if (e && e.art && e.art.startsWith(artDir) && !favorites.some(f => f.art === e.art))
+        if (e && e.art && e.art.startsWith(artDir) && !e.art.includes("..") && !favorites.some(f => f.art === e.art))
             Quickshell.execDetached(["rm", "-f", e.art.slice(7)]);
     }
     function addHistory() {

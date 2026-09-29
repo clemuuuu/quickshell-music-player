@@ -30,7 +30,7 @@ The layout adapts to the size of the tile:
 - **Dock mode**: stick the player to a screen edge; a small handle stays visible and the card
   slides out when you hover it.
 - **Themes** (button in the top-left corner): your wallpaper colors via [wallust](https://codeberg.org/explosion-mental/wallust),
-  Red, Midnight blue, Dark, Violet, Green, and two animated ones:
+  Red, Midnight blue, White (black background, white accents), Violet, Green, and two animated ones:
   - **Aurore ✦**: hues drift through the rainbow, rainbow visualizer ring, light blobs that swell on the bass.
   - **Abysse**: almost black; beat detection sends sonar waves from the disc, glowing plankton and a
     darkened cover that flashes on every kick.
