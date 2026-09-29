@@ -6,9 +6,15 @@ It doesn't play music itself: it controls whatever is already playing through **
 
 ![Aurore theme](screenshots/aurore.png)
 
-| Abysse theme | Compact modes |
-|---|---|
-| ![Abysse theme](screenshots/abysse.png) | ![Compact](screenshots/compact.png) ![Compact tall](screenshots/vertical.png) |
+### Themes
+
+![All themes](screenshots/themes.png)
+
+### Compact modes
+
+The layout adapts to the size of the tile:
+
+![Compact modes](screenshots/compact-modes.png)
 
 ## Features
 
