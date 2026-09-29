@@ -1,0 +1,6 @@
+# Généré par wallust (couleurs du fond d'écran de chacun)
+colors.json
+# Sauvegardes locales
+*.v[0-9]*
+*.bak*
+*~
